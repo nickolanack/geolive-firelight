@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="template">
+	<name>firelight</name>
+	<creationDate>2015-02-16</creationDate>
+	<author>Nick Blackwell</author>
+	<authorEmail>nick@geolive.ca</authorEmail>
+	<authorUrl>geolive.ca</authorUrl>
+	<copyright>Copyright (C) 2005 - 2015 Nick Blackwell Software, Inc. All rights reserved.</copyright>t>
+	<license>MIT</license>
+	<version>1.0.0</version>
+	<description>My New Template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>

@@ -1,0 +1,381 @@
+@CHARSET "UTF-8";
+
+@import url(://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(://fonts.googleapis.com/css?family=Oswald);
+
+* {
+	margin: 0;
+}
+
+body>section {
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+}
+
+body {
+	font-family: "Droid Serif", georgia, serif; 
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	background-image: url(/templates/firelight/images/site-background.jpg);
+	background-repeat: no-repeat;
+	background-color: #393939;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1, h2, h3 {
+	font-family: 'Oswald';
+}
+
+.wrapper.home-text {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 90px;
+	display: none;
+}
+
+.item_103 .wrapper.home-text {
+	display: block;
+} 
+
+h1.home {
+	letter-spacing: 7px; 
+	font-size: 39px; 
+	line-height: 60px; 
+	font-weight: 100;
+	text-shadow: 1px 1px 1px #333333; 
+	-moz-text-shadow: 1px 1px 1px #333333; 
+	-webkit-text-shadow: 1px 1px 1px #333333;
+	margin-bottom: 15px;
+}
+
+h2.home {
+	letter-spacing: 4px;
+	line-height: 96%;
+	font-size: 18.75px;
+	font-family: "Droid Serif", georgia, serif;
+	text-shadow: 1px 1px 1px #333333;
+	-moz-text-shadow: 1px 1px 1px #333333;
+	-webkit-text-shadow: 1px 1px 1px #333333;
+	font-weight: 100;
+}
+
+.wrapper {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.main-page header {
+	
+	padding-bottom: 140px;
+	position: relative;
+}
+
+.main-page nav {
+	margin: 0; 
+	background-color: rgba(0,0,0,0.4); 
+	padding: 8px 0; 
+	position: absolute;
+	right:0;
+	top:42px;
+	border-top-left-radius: 5px; 
+	border-bottom-left-radius: 5px; 
+	-moz-border-top-left-radius: 5px; 
+	-webkit-border-bottom-left-radius: 5px; 
+	-webkit-border-top-left-radius: 5px; 
+	-webkit-border-bottom-left-radius: 5px; 
+	border-right: 5px solid #9e452e;
+}
+
+.main-page nav a {
+	letter-spacing: 2.4px;
+	font-size: 17px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Oswald';
+	line-height: 30px;
+}
+
+
+.geolive_mediaMap_container {
+	border: 5px solid #9e452e;
+	box-sizing: border-box;
+}
+
+.site-content {
+	margin: 15px;
+}
+
+/* main nav styles */
+
+.logo {
+	display: inline-block;
+	float: left;
+}   
+.logo img, .logo-foot img{
+	width: 100%;
+}   
+
+#menu-icon {
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px;
+	margin-left: -9px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: transparent;
+	z-index: 999;
+}
+
+.main-page .nav li{
+	float: left;
+	position: relative;
+	margin: .4em .4em;
+	list-style-type: none;
+}
+.nav a, .main-page div.nav li a{
+	padding: 0.3em 1.2em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space: nowrap;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+nav a.active{
+	color: #9e452e;
+}
+
+nav a:hover {
+	color: #9e452e;
+}
+
+
+/* --- login page --- */
+
+.login.wrapper.clearfix {
+	background-color: rgba(255, 255, 255, 0.35);
+	border-radius: 4px 4px 0px 0px;	
+}
+
+.registration.wrapper.clearfix, .reset.wrapper.clearfix, .remind.wrapper.clearfix {
+	background-color: rgba(255, 255, 255, 0.35);
+	border-radius: 4px 4px 4px 4px;
+}
+
+.login.wrapper.clearfix + div {
+	width: 1140px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.35);
+	border-radius: 0px 0px 4px 4px;
+	overflow: hidden;
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+
+.login.wrapper.clearfix + div ul {
+	display: inline;
+}
+.login.wrapper.clearfix + div a {
+	padding: 1em 1em 1em 0.75em;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.login.wrapper.clearfix + div a:hover {
+	text-decoration: underline;
+}
+
+fieldset {
+	border:none;
+}
+
+fieldset p {
+	font-family: "Oswald";
+	color: white;
+	margin-bottom: 10px;
+}
+
+button.btn.btn-primary {
+	padding: 6px 12px;
+	border: none;
+	color: white;
+	background-color: #9e452e;
+	font-size: 16px;
+	font-weight: 800;
+	border-radius: 5px;
+}
+
+.control-group {
+	margin-bottom: 10px;
+}
+
+.controls input {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.control-label {
+	margin-bottom: 3px;
+	color: #fff;
+	font-family: 'Oswald';	
+}
+
+
+/* --- registration --- */
+#member-registration legend {
+	display: none;
+}
+
+.registration .btn {
+	margin-left: 0.75em;
+}
+
+.reset .btn {
+	margin-left: 0.75em;
+}
+
+.remind .btn {
+	margin-left: 0.75em;
+} 
+
+.registration .controls a {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Oswald';
+}
+
+/* ==========================================================================
+   Media Queries 1140
+   ========================================================================== */  
+@media only screen and (max-width: 1140px) { 
+	.wrapper { 
+		width: 92%; 
+		margin: 0 4%; 
+	}
+	
+	.login.wrapper.clearfix + div {
+		width: 92%; 
+		margin: 0 4%; 
+	}
+
+}
+
+/* ==========================================================================
+   Media Queries 768
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+	
+	h3.home {
+		font-size: 15px; 
+		margin-top: 80px;
+	}
+	
+	h1.home {
+		letter-spacing: 7px; 
+		font-size: 36px; 
+		line-height: 64px; 
+		text-shadow: 1px 1px 1px #333333; 
+		-moz-text-shadow: 1px 1px 1px #333333; 
+		-webkit-text-shadow: 1px 1px 1px #333333;
+	}
+	
+	h2.home {
+		letter-spacing: 7px; 
+		line-height: 30px;
+		font-size: 14px; 
+		font-family: "Droid Serif", georgia, serif; 
+		text-shadow: 1px 1px 1px #333333; 
+		-moz-text-shadow: 1px 1px 1px #333333; 
+		-webkit-text-shadow: 1px 1px 1px #333333;
+	}	
+
+}
+	
+	/* ============= Main Container General Layout Styles===============*/
+ 
+ /* ==========================================================================
+    Media Queries 600
+    ========================================================================== */
+@media only screen and (max-width: 600px) { 
+
+	h1.home {
+		letter-spacing: 7px; 
+		font-size: 36px; 
+		line-height: 64px; 
+		text-shadow: 1px 1px 1px #333333; 
+		-moz-text-shadow: 1px 1px 1px #333333; 
+		-webkit-text-shadow: 1px 1px 1px #333333;
+	}
+	
+	h2.home {
+		letter-spacing: 7px; 
+		line-height: 30px;
+		font-size: 15px; 
+		font-family: "Droid Serif", georgia, serif; 
+		text-shadow: 1px 1px 1px #333333; 
+		-moz-text-shadow: 1px 1px 1px #333333; 
+		-webkit-text-shadow: 1px 1px 1px #333333;
+	}
+	
+	h3.home {
+		margin-top:20px;
+	}
+	
+	.wrapper.home-text {
+		margin-bottom: 30px;
+	}
+	
+	div#header_logo {
+		text-align: center;
+	}
+	
+	.logo {
+		float: none;
+	}
+	
+	.main-page header {
+		padding-top: 0;
+		padding-bottom: 5px;
+		height: 185px
+	}
+ 	
+ 	#nav {
+		display:none;
+	}
+	
+	a.active {
+		color: #000;
+		-webkit-border-radius: 6px;
+    	-moz-border-radius: 6px;
+    	border-radius: 6px;
+    	background:#ccc;
+	}
+	
+	.main-page nav {
+		top: 35px;
+		border:none;
+		background-color: transparent;
+		padding:0 0;
+	}
+	
+	.slicknav_menu {
+		display:block;
+		top: 140px;
+		position: absolute;
+		width: 100%;
+	}
+}
