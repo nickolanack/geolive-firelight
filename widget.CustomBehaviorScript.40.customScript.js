@@ -138,9 +138,7 @@ SpatialDocumentPreview.setParentTile(proposalTile, ProposalControl);
 
         var wizard = wizardTemplate((new Proposal()), {});
 
-        var step = wizard.build(map, map.squeezeViewer, {}); //'geolive' string is for css
-        step();
-
+       wizard.buildDefaultAndShow();
 
 
       <?php 

@@ -217,6 +217,23 @@
         "instance": "Deploy",
         "parameters": "_Deploy.json"
     },
+    "plugin.36": {
+        "name": "Email Moderate",
+        "instance": "EmailModerate",
+        "parameters": {
+            "moderator": [
+                "nickblackwell82@gmail.com",
+                ""
+            ],
+            "enableEmails": true,
+            "fromEmailName": "Geolive Notifications",
+            "fromEmail": "admin@geolive.ca",
+            "siteUrl": "https:\/\/firelight.geolive.ca",
+            "siteName": "Firelight",
+            "formatEmailScript": "plugin.EmailModerate.36.formatEmailScript.js",
+            "formatVariablesScript": "plugin.EmailModerate.36.formatVariablesScript.js"
+        }
+    },
     "widget.69": {
         "name": "Custom Behavior Script",
         "instance": "CustomBehaviorScript",
@@ -1018,8 +1035,8 @@
         "instance": "CustomBehaviorScript",
         "parameters": {
             "customScript": "widget.CustomBehaviorScript.62.customScript.js",
-            "widgetTitle": "Custom Layer",
-            "readAccess": "public"
+            "widgetTitle": "Always Login",
+            "readAccess": "guest"
         }
     },
     "widget.50": {
@@ -1133,18 +1150,7 @@
                         ]
                     },
                     "footer": {
-                        "modules": [
-                            {
-                                "type": "DefaultEdit",
-                                "config": {
-                                    "className": "",
-                                    "dragConfirmMessage": "save new position",
-                                    "dragConfirm": false,
-                                    "geocodeMove": true,
-                                    "templateName": "MapItemTemplate"
-                                }
-                            }
-                        ]
+                        "modules": []
                     },
                     "menu": {
                         "modules": []
