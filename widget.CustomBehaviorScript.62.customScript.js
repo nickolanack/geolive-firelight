@@ -6,7 +6,8 @@
 var loginFn=function(){
 MapFactory.LoginWizard(map).addEvent('cancel', loginFn);
 }
-loginFn();
+setTimeout(loginFn, 2000);
+
 /*
 var FirstNationsLayer=new Class({
 Extends:GeoliveLayer,

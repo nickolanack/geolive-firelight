@@ -391,6 +391,16 @@
             "position": "RIGHT_CENTER"
         }
     },
+    "widget.74": {
+        "name": "Custom Control Script",
+        "instance": "CustomControlScript",
+        "parameters": {
+            "customScript": "",
+            "widgetTitle": "User Type Control",
+            "readAccess": "registered",
+            "position": "TOP_LEFT"
+        }
+    },
     "widget.68": {
         "name": "Attribute Wizard Builder",
         "instance": "AttributeWizardBuilder",
@@ -619,6 +629,302 @@
             "onUpdateScript": "",
             "onSaveScript": "",
             "widgetTitle": "Process Proposal",
+            "readAccess": "public"
+        }
+    },
+    "widget.72": {
+        "name": "User Wizard Builder",
+        "instance": "UserWizardBuilder",
+        "parameters": {
+            "metadata": {
+                "class": "DescisionNode",
+                "_diagramState": {
+                    "x": -143,
+                    "y": 206
+                },
+                "children": [
+                    {
+                        "class": "Node",
+                        "_diagramState": {
+                            "x": -132,
+                            "y": 268
+                        }
+                    },
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            []
+                        ],
+                        "_diagramState": {
+                            "x": 90,
+                            "y": 262
+                        },
+                        "children": [
+                            {
+                                "class": "Node",
+                                "_diagramState": {
+                                    "x": 272,
+                                    "y": 282
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": []
+                                },
+                                "content": {
+                                    "modules": []
+                                },
+                                "footer": {
+                                    "modules": []
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "templateName": "MapItemTemplate",
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.73": {
+        "name": "Login Wizard Builder",
+        "instance": "LoginWizardBuilder",
+        "parameters": {
+            "metadata": {
+                "class": "DescisionNode",
+                "_diagramState": {
+                    "x": -320,
+                    "y": 254
+                },
+                "children": [
+                    {
+                        "class": "Node",
+                        "_diagramState": {
+                            "x": -309,
+                            "y": 316
+                        }
+                    },
+                    {
+                        "title": "Register",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            []
+                        ],
+                        "_diagramState": {
+                            "x": 122,
+                            "y": 345
+                        },
+                        "children": [
+                            {
+                                "class": "Node",
+                                "_diagramState": {
+                                    "x": 354,
+                                    "y": 434
+                                }
+                            },
+                            {
+                                "title": "Login",
+                                "class": "AttributesTableNode",
+                                "fields": [
+                                    []
+                                ],
+                                "_diagramState": {
+                                    "x": 694,
+                                    "y": 358
+                                },
+                                "children": [
+                                    {
+                                        "class": "Node",
+                                        "_diagramState": {
+                                            "x": 826,
+                                            "y": 307
+                                        }
+                                    }
+                                ],
+                                "builderMetadata": {
+                                    "positions": {
+                                        "title": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardSteps",
+                                                    "config": {
+                                                        "iconValue": [],
+                                                        "className": "",
+                                                        "manualValue": "1",
+                                                        "width": 349,
+                                                        "height": 225,
+                                                        "labelMethod": "auto",
+                                                        "elasticity": false,
+                                                        "minHeight": 200,
+                                                        "minWidth": 400,
+                                                        "showSteps": false
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "content": {
+                                            "modules": [
+                                                {
+                                                    "type": "WizardStepTitle",
+                                                    "config": {
+                                                        "className": "",
+                                                        "text": "<span style=\"text-align: left; font-weight: 100; display: block;\"><span style=\"font-size:20px\">\nLogin<\/span>\n<p><\/p><br><\/span>"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "WizardLogin",
+                                                    "config": {
+                                                        "className": ""
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "footer": {
+                                            "modules": []
+                                        },
+                                        "menu": {
+                                            "modules": []
+                                        }
+                                    },
+                                    "positionList": [
+                                        "title",
+                                        "content",
+                                        "footer",
+                                        "menu"
+                                    ]
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardSteps",
+                                            "config": {
+                                                "iconValue": [],
+                                                "className": "",
+                                                "manualValue": "1",
+                                                "width": 525,
+                                                "height": 675,
+                                                "labelMethod": "auto",
+                                                "elasticity": true,
+                                                "minHeight": 200,
+                                                "minWidth": 400,
+                                                "showSteps": false
+                                            }
+                                        }
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"text-align: left; font-weight: 100; display: block;\"><span style=\"font-size:20px\">\nRegister to access mapping service<\/span>\n<p><\/p><br><\/span>"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardScriptElement",
+                                            "config": {
+                                                "script": "var login= new Element('label', {html:'Already have an account?', 'class':'login-button-text', events:{\n    click:function(){\n        \/\/goto next step\n        wizard.displayNext();\n    }\n}});\n\/\/login.appendChild(new Element('br'));\nlogin.appendChild(new Element('button',{html:'Login'}));\nreturn login;"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"text-align: left; font-weight: 100; display: block;\"><span style=\"font-size:20px\">\nCreate an account<\/span>\n<p><\/p><br><\/span>"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardIconizedScriptSelect",
+                                            "config": {
+                                                "icons": [
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png"
+                                                ],
+                                                "iconsetMetadata": {
+                                                    "onSelectScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/oFs_X4a_[ImAgE]_[G]_QI0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/Y40_6sW_[G]_[ImAgE]_Sl0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/7qx_[ImAgE]_[G]_5sS_Itd.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
+                                                    },
+                                                    "onSubmitScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/oFs_X4a_[ImAgE]_[G]_QI0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/Y40_6sW_[G]_[ImAgE]_Sl0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/7qx_[ImAgE]_[G]_5sS_Itd.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
+                                                    },
+                                                    "onRenderScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/oFs_X4a_[ImAgE]_[G]_QI0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/Y40_6sW_[G]_[ImAgE]_Sl0.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/7qx_[ImAgE]_[G]_5sS_Itd.png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "asset.parentNode.setAttribute('data-label','Community Member');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "asset.parentNode.setAttribute('data-label','Proponent');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": "asset.parentNode.setAttribute('data-label','Lands Department');"
+                                                    }
+                                                },
+                                                "initSelectedScript": "",
+                                                "className": "register-user-role",
+                                                "requireSelection": true
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardRegistration",
+                                            "config": {
+                                                "className": "registration-left"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": []
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "templateName": "LoginWizard",
+            "widgetTitle": "",
             "readAccess": "public"
         }
     },

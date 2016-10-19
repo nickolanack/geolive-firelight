@@ -1,3 +1,28 @@
+label.login-button-text {
+    font-weight: 100;
+    color: cornflowerblue;
+    display: block;
+    text-align: right;
+}
+
+.login-button-text button {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.register-user-role>ul {
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+
+
 .tileButtonContainer {
     background-color: #f3f3f3;
     background-size: 0;
