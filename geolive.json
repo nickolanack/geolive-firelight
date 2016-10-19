@@ -85,7 +85,15 @@
     "plugin.13": {
         "name": "Users",
         "instance": "Users",
-        "parameters": {}
+        "parameters": {
+            "customUserGroups": [
+                "community-member",
+                "lands-department",
+                "proponent"
+            ],
+            "customUserScript": "plugin.Users.13.customUserScript.js",
+            "customGroupMemberOfGroupScript": "plugin.Users.13.customGroupMemberOfGroupScript.js"
+        }
     },
     "plugin.17": {
         "name": "Google Maps",
@@ -395,7 +403,7 @@
         "name": "Custom Control Script",
         "instance": "CustomControlScript",
         "parameters": {
-            "customScript": "",
+            "customScript": "widget.CustomControlScript.74.customScript.js",
             "widgetTitle": "User Type Control",
             "readAccess": "registered",
             "position": "TOP_LEFT"
