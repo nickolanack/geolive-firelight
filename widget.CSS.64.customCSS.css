@@ -267,3 +267,7 @@ span.t-btn.active.admin-btn {
     background-image: url(//bcwf.geolive.ca/components/com_geolive/users_files/user_files_400/Uploads/[G]_B5w_HqI_CRL_[ImAgE].png?thumb=%3E31x%3E31);
     background-size: 28px;
 }
+
+.default-cluster-labels {
+    color: black;
+}

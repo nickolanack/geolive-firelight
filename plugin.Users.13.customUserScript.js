@@ -2,7 +2,7 @@ Core::LoadPlugin('Attributes');
 $attributeMap=array();
 $attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', array('isCommunityMember', 'isLandsDepartment', 'isProponent'), 'userAttributes');
 
-if($attribs['isCommunityMember']==='true'&&$group==='communty-member'){
+if($attribs['isCommunityMember']==='true'&&$group==='community-member'){
 return true;
 }
 
