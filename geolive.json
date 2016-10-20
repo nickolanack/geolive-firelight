@@ -419,6 +419,11 @@
             "readAccess": "no-role"
         }
     },
+    "widget.78": {
+        "name": "Cluster Behavior",
+        "instance": "ClusterBehaviors",
+        "parameters": {}
+    },
     "widget.68": {
         "name": "Attribute Wizard Builder",
         "instance": "AttributeWizardBuilder",
@@ -1405,6 +1410,22 @@
             "templateName": "MapItemTemplate"
         }
     },
+    "widget.77": {
+        "name": "Search Bar Tab",
+        "instance": "SearchBarTab",
+        "parameters": {
+            "tabColor": "rgb(100, 149, 237)",
+            "fontColor": "rgba(0,0,0)",
+            "showIcon": true,
+            "widgetTitle": "Proposal Tab",
+            "readAccess": "public",
+            "position": "RIGHT_CENTER",
+            "icon": [
+                "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[G]_gVG_[ImAgE]_Dn_kmf.png"
+            ],
+            "iconActive": []
+        }
+    },
     "widget.54": {
         "name": "Session Behavior",
         "instance": "Session",
@@ -1533,7 +1554,14 @@
                         "modules": []
                     },
                     "menu": {
-                        "modules": []
+                        "modules": [
+                            {
+                                "type": "LayerSelect"
+                            },
+                            {
+                                "type": "MenuController"
+                            }
+                        ]
                     }
                 },
                 "positionList": [
@@ -1715,13 +1743,21 @@
                                     "className": "",
                                     "dragConfirmMessage": "save new position",
                                     "dragConfirm": false,
-                                    "geocodeMove": true
+                                    "geocodeMove": true,
+                                    "templateName": "MapItemTemplate"
                                 }
                             }
                         ]
                     },
                     "menu": {
-                        "modules": []
+                        "modules": [
+                            {
+                                "type": "LayerSelect"
+                            },
+                            {
+                                "type": "MenuController"
+                            }
+                        ]
                     }
                 },
                 "positionList": [
@@ -1732,7 +1768,8 @@
                 ]
             },
             "widgetTitle": "",
-            "readAccess": "public"
+            "readAccess": "public",
+            "templateName": "default"
         }
     },
     "widget.37": {

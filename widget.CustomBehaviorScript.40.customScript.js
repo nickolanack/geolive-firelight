@@ -2,11 +2,10 @@
 /**
  * Community Member
  */
-//check is user is a proponent!
-Core::LoadPlugin('Attributes');
-$attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', 'isCommunityMember', 'userAttributes');
 
-// if($attribs['isCommunityMember']==='true'){
+
+if(Auth('memberof', 'community-member', 'group')){
+
         ?>
 
     var container=new Element('div', {'class':"CustomTile"});
@@ -81,16 +80,17 @@ $attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', 'isCom
     })
 
     <?php
-//}
+}
+
+
+
+
 
 /**
  * Proponent
  */
-//check is user is a proponent!
-Core::LoadPlugin('Attributes');
-$attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', 'isProponent', 'userAttributes');
 
- //if($attribs['isProponent']==='true'){
+if(Auth('memberof', 'proponent', 'group')){
         ?>
 
     var container=new Element('div', {'class':"CustomTile"});
@@ -149,17 +149,21 @@ SpatialDocumentPreview.setParentTile(proposalTile, ProposalControl);
 
 
 
+
+
 <?php 
+
+}
+
+
+
+
 
 /**
  * Lands Department
  */
 
-//check if user is a proponent!
-Core::LoadPlugin('Attributes');
-$attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', 'isLandsDepartment', 'userAttributes');
-
- //if($attribs['isLandsDepartment']==='true'){
+ if(Auth('memberof', 'lands-department', 'group')){
     ?>
 
     var container=new Element('div', {'class':"CustomTile"});
@@ -216,7 +220,7 @@ $attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', 'isLan
 
 
     <?php
-//}
+}
 ?>
 
 
@@ -227,7 +231,7 @@ $attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', 'isLan
 setTimeout(function(){
 
 
-    var tab=map.getNamedValue('EmailerTab');
+    var tab=map.getNamedValue('SearchBarTab');
 
     if(!tab){
         return;
@@ -241,7 +245,7 @@ setTimeout(function(){
         $module = Core::LoadPlugin('Firelight')->loadModule('Proposals', array());
         // die(print_r($module,true));
         if ($module) {
-            echo $module->display("map", "map.getNamedValue('EmailerTab')", 'tab', (object) array(
+            echo $module->display("map", "map.getNamedValue('SearchBarTab')", 'tab', (object) array(
                     'showAdminControls'=>Core::Client()->isAdmin()
                 )) . ";";
             ?>

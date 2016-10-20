@@ -147,7 +147,7 @@ span.media-item:after{
     background-color: #e0e0e0;
 }
 
-.ProposalsModule h3 {
+.ProposalsModule h3, .EmailerDetailsModule h3 {
     font-weight: 100;
     color: cornflowerblue;
     font-family: sans-serif;
