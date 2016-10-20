@@ -246,7 +246,7 @@ setTimeout(function(){
         // die(print_r($module,true));
         if ($module) {
             echo $module->display("map", "map.getNamedValue('SearchBarTab')", 'tab', (object) array(
-                    'showAdminControls'=>Core::Client()->isAdmin()
+                    'showAdminControls'=>Auth('memberof', 'lands-department', 'group')
                 )) . ";";
             ?>
                     module.load(null, tab.content, null);
