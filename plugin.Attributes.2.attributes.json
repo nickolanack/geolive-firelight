@@ -46,7 +46,7 @@
                     "label": "Is Community Member",
                     "description": "",
                     "fieldType": "boolean",
-                    "color": "#FFFFFF",
+                    "color": "rgb(undefined, undefined, undefined)",
                     "searchability": "special",
                     "editability": "special",
                     "fieldBooleanOptions": {
@@ -99,27 +99,17 @@
                     "title": "isLandsDepartment",
                     "label": "Is Lands Department",
                     "description": "",
-                    "fieldType": "text",
-                    "color": "#FFFFFF",
+                    "fieldType": "boolean",
+                    "color": "rgb(undefined, undefined, undefined)",
                     "searchability": "special",
                     "editability": "special",
-                    "fieldTextOptions": {
-                        "textType": "input",
-                        "inputOptions": {
-                            "buildAutocomplete": false,
-                            "requireModeration": false,
-                            "limitMaxChars": 0,
-                            "limitMaxWords": 0,
-                            "allowHtml": false,
-                            "allowMedia": true,
-                            "allowLinks": true
-                        },
-                        "listOptions": {
-                            "takeSugesstions": true,
-                            "buildTree": false,
-                            "iconize": false,
-                            "colorize": false
-                        }
+                    "fieldBooleanOptions": {
+                        "trueIcon": false,
+                        "falseIcon": false,
+                        "hideFalse": true,
+                        "trueLabel": "",
+                        "falseLabel": "",
+                        "useFieldIcon": false
                     },
                     "allowMultiple": false
                 },

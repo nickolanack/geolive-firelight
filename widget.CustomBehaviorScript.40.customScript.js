@@ -221,34 +221,6 @@ $attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', 'isLan
 
 
 
-<?php 
-/**
- * Register User Group
- */
-//check is user is a proponent!
-if(!Core::Client()->isGuest()){
-    Core::LoadPlugin('Attributes');
-    $attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', array('isLandsDepartment', 'isCommunityMember', 'isProponent'), 'userAttributes');
-
-    if($attribs['isLandsDepartment']!=='true'&&
-             $attribs['isCommunityMember']!=='true'&&
-             $attribs['isProponent']!=='true'){
-
-        //user is none of above!
-      
-            $params=Core::LoadPlugin('Firelight')->modalViewParams('selfidentify.form');
-
-      ?>
-      //PushBoxWindow.open(<?php echo json_encode($params['url']); ?>, {handler:'iframe'});
-
-
-
-        <?php
-    }
-}
-
-?>
-
 
 
 

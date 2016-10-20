@@ -89,7 +89,8 @@
             "customUserGroups": [
                 "community-member",
                 "lands-department",
-                "proponent"
+                "proponent",
+                "no-role"
             ],
             "customUserScript": "plugin.Users.13.customUserScript.js",
             "customGroupMemberOfGroupScript": "plugin.Users.13.customGroupMemberOfGroupScript.js"
@@ -406,7 +407,16 @@
             "customScript": "widget.CustomControlScript.74.customScript.js",
             "widgetTitle": "User Type Control",
             "readAccess": "registered",
-            "position": "TOP_LEFT"
+            "position": "TOP_RIGHT"
+        }
+    },
+    "widget.76": {
+        "name": "Custom Behavior Script",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "customScript": "widget.CustomBehaviorScript.76.customScript.js",
+            "widgetTitle": "Needs User Role",
+            "readAccess": "no-role"
         }
     },
     "widget.68": {
@@ -665,25 +675,79 @@
                             []
                         ],
                         "_diagramState": {
-                            "x": 90,
-                            "y": 262
+                            "x": 107,
+                            "y": 151
                         },
                         "children": [
                             {
                                 "class": "Node",
                                 "_diagramState": {
-                                    "x": 272,
-                                    "y": 282
+                                    "x": 419,
+                                    "y": 280
                                 }
                             }
                         ],
                         "builderMetadata": {
                             "positions": {
                                 "title": {
-                                    "modules": []
+                                    "modules": [
+                                        {
+                                            "type": "WizardSteps",
+                                            "config": {
+                                                "iconValue": [],
+                                                "className": "",
+                                                "manualValue": "1",
+                                                "width": 594,
+                                                "height": 250,
+                                                "labelMethod": "auto",
+                                                "elasticity": false,
+                                                "minHeight": 200,
+                                                "minWidth": 400,
+                                                "showSteps": false
+                                            }
+                                        }
+                                    ]
                                 },
                                 "content": {
-                                    "modules": []
+                                    "modules": [
+                                        {
+                                            "type": "WizardStepTitle",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span style=\"text-align: left; font-weight: 100; display: block;\"><span style=\"font-size:20px\">\nYour role<\/span>\n<p><\/p><br><\/span>"
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardIconizedScriptSelect",
+                                            "config": {
+                                                "icons": [
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png",
+                                                    "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png"
+                                                ],
+                                                "iconsetMetadata": {
+                                                    "onSelectScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "(new SaveAttributeItemValuesQuery(GeoliveClient.getId(), 'user', 'userAttributes', {isCommunityMember:true, isProponent:false, isLandsDepartment:false})).addEvent('success',function(){\nwindow.location.reload();\n}).execute();\n\n",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "(new SaveAttributeItemValuesQuery(GeoliveClient.getId(), 'user', 'userAttributes', {isCommunityMember:false, isProponent:true, isLandsDepartment:false})).addEvent('success',function(){\nwindow.location.reload();\n}).execute();\n\n",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": "(new SaveAttributeItemValuesQuery(GeoliveClient.getId(), 'user', 'userAttributes', {isCommunityMember:false, isProponent:false, isLandsDepartment:true})).addEvent('success',function(){\nwindow.location.reload();\n}).execute();\n\n"
+                                                    },
+                                                    "onSubmitScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
+                                                    },
+                                                    "onRenderScripts": {
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
+                                                    }
+                                                },
+                                                "initSelectedScript": "",
+                                                "className": "",
+                                                "requireSelection": true
+                                            }
+                                        }
+                                    ]
                                 },
                                 "footer": {
                                     "modules": []
@@ -706,8 +770,8 @@
             "onCreateScript": "",
             "onUpdateScript": "",
             "onSaveScript": "",
-            "templateName": "MapItemTemplate",
-            "widgetTitle": "",
+            "templateName": "UserTemplate",
+            "widgetTitle": "User Roles",
             "readAccess": "public"
         }
     },
@@ -736,15 +800,15 @@
                             []
                         ],
                         "_diagramState": {
-                            "x": 122,
-                            "y": 345
+                            "x": 84,
+                            "y": 129
                         },
                         "children": [
                             {
                                 "class": "Node",
                                 "_diagramState": {
-                                    "x": 354,
-                                    "y": 434
+                                    "x": 436,
+                                    "y": 338
                                 }
                             },
                             {
@@ -754,8 +818,8 @@
                                     []
                                 ],
                                 "_diagramState": {
-                                    "x": 694,
-                                    "y": 358
+                                    "x": 724,
+                                    "y": 388
                                 },
                                 "children": [
                                     {
@@ -897,7 +961,7 @@
                                                         "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": "asset.parentNode.setAttribute('data-label','Lands Department');"
                                                     }
                                                 },
-                                                "initSelectedScript": "",
+                                                "initSelectedScript": "widget.LoginWizardBuilder.73.metadata.children.1.builderMetadata.positions.content.modules.3.config.initSelectedScript.js",
                                                 "className": "register-user-role",
                                                 "requireSelection": true
                                             }
@@ -905,7 +969,9 @@
                                         {
                                             "type": "WizardRegistration",
                                             "config": {
-                                                "className": "registration-left"
+                                                "className": "registration-left",
+                                                "onSuccessfulRegistrationScript": "widget.LoginWizardBuilder.73.metadata.children.1.builderMetadata.positions.content.modules.4.config.onSuccessfulRegistrationScript.js",
+                                                "formatRegistrationFieldsScript": "widget.LoginWizardBuilder.73.metadata.children.1.builderMetadata.positions.content.modules.4.config.formatRegistrationFieldsScript.js"
                                             }
                                         }
                                     ]
@@ -2031,7 +2097,7 @@
             "fontColor": "rgb(255, 255, 255)",
             "showIcon": true,
             "widgetTitle": "",
-            "readAccess": "registered",
+            "readAccess": "lands-department",
             "position": "RIGHT_CENTER"
         }
     },

@@ -1,3 +1,8 @@
+if(Core::Client()->isGuest()){
+   return false;
+}
+
+
 Core::LoadPlugin('Attributes');
 $attributeMap=array();
 $attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', array('isCommunityMember', 'isLandsDepartment', 'isProponent'), 'userAttributes');
@@ -12,6 +17,10 @@ return true;
 
 if($attribs['isProponent']==='true'&&$group==='proponent'){
 return true;
+}
+
+if($group==='no-role'&&($attribs['isCommunityMember']!=='true'&&$attribs['isLandsDepartment']!=='true'&&$attribs['isProponent']!=='true')){
+  return true;
 }
 
 return false;
