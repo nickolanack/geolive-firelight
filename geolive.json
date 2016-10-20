@@ -310,7 +310,7 @@
             "onSelectionChangedScript": "widget.AttributesCloud.70.onSelectionChangedScript.js",
             "sendNotifications": false,
             "widgetTitle": "",
-            "readAccess": "public"
+            "readAccess": "community-member"
         }
     },
     "widget.71": {
@@ -680,8 +680,8 @@
                             []
                         ],
                         "_diagramState": {
-                            "x": 107,
-                            "y": 151
+                            "x": 177,
+                            "y": 221
                         },
                         "children": [
                             {
@@ -742,12 +742,12 @@
                                                         "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
                                                     },
                                                     "onRenderScripts": {
-                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "",
-                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "",
-                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": ""
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/83J_dwW_[G]_bdd_[ImAgE].png": "asset.parentNode.setAttribute('data-label','Community Member');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/AfX_[ImAgE]_sq7_Pi8_[G].png": "asset.parentNode.setAttribute('data-label','Proponent');",
+                                                        "components\/com_geolive\/users_files\/user_files_680\/Uploads\/DLD_HPQ_[G]_[ImAgE]_nK3.png": "asset.parentNode.setAttribute('data-label','Lands Department');"
                                                     }
                                                 },
-                                                "initSelectedScript": "",
+                                                "initSelectedScript": "widget.UserWizardBuilder.72.metadata.children.1.builderMetadata.positions.content.modules.1.config.initSelectedScript.js",
                                                 "className": "",
                                                 "requireSelection": true
                                             }
@@ -1418,7 +1418,7 @@
             "fontColor": "rgba(0,0,0)",
             "showIcon": true,
             "widgetTitle": "Proposal Tab",
-            "readAccess": "public",
+            "readAccess": "proponent",
             "position": "RIGHT_CENTER",
             "icon": [
                 "components\/com_geolive\/users_files\/user_files_680\/Uploads\/[G]_gVG_[ImAgE]_Dn_kmf.png"
@@ -2193,7 +2193,7 @@
                 }
             ],
             "widgetTitle": "",
-            "readAccess": "public",
+            "readAccess": "community-member",
             "formatCloudScript": "",
             "formatTagScript": "",
             "formatTabButtonScript": "",

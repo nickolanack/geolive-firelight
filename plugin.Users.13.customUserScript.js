@@ -7,7 +7,7 @@ Core::LoadPlugin('Attributes');
 $attributeMap=array();
 $attribs=AttributesRecord::GetFields(Core::Client()->getUserId(), 'user', array('isCommunityMember', 'isLandsDepartment', 'isProponent'), 'userAttributes');
 
-if($attribs['isCommunityMember']==='true'&&$group==='community-member'){
+if($group==='community-member'&&($attribs['isCommunityMember']==='true'||Auth('memberof', 'lands-department', 'group'))){
 return true;
 }
 
@@ -15,11 +15,11 @@ if($attribs['isLandsDepartment']==='true'&&$group==='lands-department'&&Core::Cl
 return true;
 }
 
-if($attribs['isProponent']==='true'&&$group==='proponent'){
+if($group==='proponent'&&($attribs['isProponent']==='true'||Auth('memberof', 'lands-department', 'group'))){
 return true;
 }
 
-if($group==='no-role'&&($attribs['isCommunityMember']!=='true'&&$attribs['isLandsDepartment']!=='true'&&$attribs['isProponent']!=='true')){
+if($group==='no-role'&&($attribs['isCommunityMember']!=='true'&&(!Auth('memberof', 'lands-department', 'group'))&&$attribs['isProponent']!=='true')){
   return true;
 }
 
