@@ -11,7 +11,7 @@ if($attribs['isCommunityMember']==='true'&&$group==='community-member'){
 return true;
 }
 
-if($attribs['isLandsDepartment']==='true'&&$group==='lands-department'){
+if($attribs['isLandsDepartment']==='true'&&$group==='lands-department'&&Core::Client()->isAdmin()){
 return true;
 }
 
